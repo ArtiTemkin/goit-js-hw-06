@@ -20,7 +20,8 @@ function onFormSubmit(event) {
             email: email.value,
             password: password.value,
         }
-    console.log(formData)
+        console.log(formData)
+        event.currentTarget.reset();
     }
-    event.currentTarget.reset();
+    
 }

@@ -10,11 +10,21 @@ const ingredients = [
 let listOfIngredients = document.querySelector('ul#ingredients');
 // console.log(listOfIngredients);
 // listOfIngredients = []
-for (let i = 0; i < ingredients.length; i += 1) {
+
+ingredients.forEach(ingredient => {
   let aNewListItem = document.createElement('li');
-  aNewListItem.textContent = ingredients[i];
+  aNewListItem.textContent = ingredient;
   aNewListItem.classList.add('item');
   listOfIngredients.append(aNewListItem)
+  return
+})
+
+
+// for (let i = 0; i < ingredients.length; i += 1) {
+//   let aNewListItem = document.createElement('li');
+//   aNewListItem.textContent = ingredients[i];
+//   aNewListItem.classList.add('item');
+//   listOfIngredients.append(aNewListItem)
   
-}
-console.log(listOfIngredients)
+// }
+// console.log(listOfIngredients)
